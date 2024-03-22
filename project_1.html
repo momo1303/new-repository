@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTS</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to top,
+          pink 0%,
+          rgb(81, 164, 247) 100%
+        );
+        color: #000;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        border: 1px solid pink;
+        padding: 10px;
+        background-color: rgb(170, 126, 252);
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: 100;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        font-family: cursive;
+      }
+      h3 {
+        text-align: center;
+        color: white;
+        font-family: cursive;
+        line-height: 10%;
+      }
+      span {
+        color: white;
+        font-size: 12px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 95%;
+        border-radius: 5px;
+      }
+      p {
+        color: aliceblue;
+        line-height: 1.5;
+        font-size: 12px;
+        font-family: cursive;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: rgb(170, 126, 252);
+        color: white;
+        font-size: 20px;
+        font-family: cursive;
+        box-shadow: 10px 10px 5px whitesmoke;
+      }
+      button:hover {
+        transition: all 1s ease-out;
+        background: white;
+        color: rgb(170, 126, 252);
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        color: rgb(170, 126, 252);
+        text-decoration: none;
+        font-family: cursive;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>BTS</h1>
+      <h2><em>(Bangtan Sonyeondan:방탄소년단)</em></h2>
+      <h3><em>Music for art and healing 💜</em></h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/043/original/wp4508527.jpg?1698359834"
+        alt="bts"
+        width="300"
+      />
+      <p>
+        BTS (Korean: 방탄소년단; RR: Bangtan Sonyeondan; lit. Bulletproof Boy
+        Scouts), also known as the Bangtan Boys, is a South Korean boy band
+        formed in 2010.
+      </p>
+      <hr />
+      <p>
+        The band consists of Jin, Suga, J-Hope, RM, Jimin, V, and Jungkook, who
+        co-write or co-produce much of their material. Originally a hip hop
+        group, they expanded their musical style to incorporate a wide range of
+        genres, while their lyrics have focused on subjects including mental
+        health, the troubles of school-age youth and coming of age, loss, the
+        journey towards self-love, individualism, and the consequences of fame
+        and recognition. Their discography and adjacent work has also referenced
+        literature, philosophy and psychology, and includes an alternate
+        universe storyline.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/BTS"
+          target="_blank"
+          class="learn-more"
+        >
+          Learn More Here
+        </a>
+      </p>
+      <button class="music-button">Music Here</button>
+      <br />
+      <span>This page was built by <em>Monica Moreno</em></span>
+    </div>
+    <script>
+      function music() {
+        let name = prompt("What is your name?");
+        let song = prompt(" What is your favorite song?");
+        let like = prompt("Did you enjoy your visit?");
+        if (like === "yes") {
+          alert(
+            "Thank You, " +
+              name +
+              " for your interest! We welcome you to our community. " +
+              song +
+              ", that's a good song choice! ♫"
+          );
+        } else {
+          alert("Thank You " + name + " for visiting.");
+        }
+      }
+      let button = document.querySelector(".music-button");
+      button.addEventListener("click", music);
+    </script>
+  </body>
+</html>
